@@ -8,12 +8,11 @@ services:
     container_name: studyrobo-backend
     restart: always
     ports:
-      - "8005:8005"
+      - "8081:8080"   # External 8081 → Internal 8080
     env_file:
       - .env
     environment:
-      # fallback if .env missing
       PYTHONUNBUFFERED: 1
     volumes:
       - .:/app
-    command: uvicorn app.main:app --host 0.0.0.0 --port 8005
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8080
