@@ -21,3 +21,7 @@ google-auth==2.25.1
 google-auth-oauthlib==1.2.0
 requests==2.31.0
 aiofiles==23.2.1
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
